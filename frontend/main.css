@@ -1,0 +1,39 @@
+body {
+  background-color: white;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #000080;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */ 
+  margin: 0;
+
+}
+
+
+.navbar a {
+
+  float: left;
+  display: block;
+  color: #F8F8FF;
+  text-align: center;
+  padding: 12px 10px;
+  text-decoration: none;
+  font-size: 20px;
+
+}
+
+.navbar a: hover {
+  background: #696969;
+  color: black;
+}
+
+
+.block {
+	width: 100%;
+	padding: 100px;
+}
+
+
