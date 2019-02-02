@@ -5,11 +5,12 @@ table{
 
 body {
   background-color: white;
+  margin: 0;
 }
 
 .navbar {
   overflow: hidden;
-  background-color: #000080;
+  background-color: #2559C0;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */ 
@@ -18,19 +19,18 @@ body {
 
 
 .navbar a {
-
   float: left;
   display: block;
   color: #F8F8FF;
   text-align: center;
-  padding: 12px 10px;
+  padding: 14px;
   text-decoration: none;
   font-size: 20px;
 
 }
 
-.navbar a: hover {
-  background: #696969;
+.navbar a:hover {
+  background-color: #D3D3D3;
   color: black;
 }
 
@@ -40,5 +40,27 @@ body {
 	padding: 100px;
 }
 
+#TeamDescription a{
+	display: block;
+	text-align: center;
+	padding: 14px;
+	background-color: #D3D3D3;
+	text-decoration: none;
+
+}
+
+#TeamDescription a:link {
+	color: black;
+}
+
+#TeamDescription a:visited {
+	color: black;
+}
+
+#TeamDescription a:hover {
+	background-color: #DCDCDC;
+    color: black;
+    opacity: 0.7;
+}
 
 
