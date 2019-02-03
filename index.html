@@ -108,11 +108,14 @@
 	GEOJSONP.features.forEach(function(element){
 		heatMapData.push(new google.maps.LatLng(element.geometry.coordinates[0], element.geometry.coordinates[1]));
 	});
-	return heatMapData;    
+	var heatmap = new google.maps.visualization.HeatmapLayer({
+ 			data: heatMapData
+			});
+	heatmap.setMap(map);        
       }
     </script>
     <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIJ9XX2ZvRKCJcFRrl-lRanEtFUow4piM&libraries=visualization&callback=initMap">
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDz9GIYvtNWt2ho1220m-7loGSQkMl1pbg&&libraries=visualization&callback=initMap">
     </script>
   </body>
 </html>
