@@ -29,6 +29,14 @@
 	
 	eqfeed_callback(GEOJSONP);
 
+	var heatMapData = [];
+
+	GEOJSONP.features.forEach(function(element)){
+		heatMapData.push({
+					new google.maps.LatLng(element.geometry.coordinates[0], element.geometry.coordinates[1]),
+				});
+	}
+
       }
 
       // Loop through the results array and place a marker for each
@@ -45,7 +53,7 @@
       }
     </script>
     <script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDz9GIYvtNWt2ho1220m-7loGSQkMl1pbg&callback=initMap">
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDz9GIYvtNWt2ho1220m-7loGSQkMl1pbg&&libraries=visualization&callback=initMap">
     </script>
   </body>
 </html>
