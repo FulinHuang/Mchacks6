@@ -48,13 +48,14 @@ body {
 
 .MapIcon img{
 	margin-left: -80px;
-	margin-top: -80px;
+	margin-top: -200px;
 }
 
 #ChallengeSolution, #TeamDescription{
   padding-top: 20px;  
 
 }
+
 
 #TeamDescription a{
 	display: block;
