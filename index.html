@@ -34,6 +34,10 @@
 	GEOJSONP.features.forEach(function(element){
 		heatMapData.push(new google.maps.LatLng(element.geometry.coordinates[0], element.geometry.coordinates[1]));
 	});
+	var heatmap = new google.maps.visualization.HeatmapLayer({
+ 			data: heatmapData
+			});
+	heatmap.setMap(map);
 
       }
 
