@@ -23,7 +23,7 @@ body {
   display: block;
   color: #F8F8FF;
   text-align: center;
-  padding: 12px 20px;
+  padding: 14px 25px;
   text-decoration: none;
   font-size: 20px;
 
@@ -43,19 +43,24 @@ body {
 
 
 #ChallengeDescription {
-	padding-top: 50px;
+	padding-top: 100px;
 }
 
-.MapIcon img{
-	margin-left: -80px;
-	margin-top: -200px;
+#ChallengeDescription table {
+  text-align: justify;
 }
+
 
 #ChallengeSolution, #TeamDescription{
   padding-top: 20px;  
 
 }
 
+.MapIcon img {
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+}
 
 #TeamDescription a{
 	display: block;
